@@ -50,26 +50,6 @@ function stopwatch() {
 }
 var span = document.querySelectorAll("span");
 
-function call() {
-  let date = new Date(
-    `${span[0].innerText} ${span[1].innerText} ${span[2].innerText}`
-  );
-  let current_date = new Date();
-
-  let difference = eval(date - current_date) / 1000;
-
-  let days = Math.floor(difference / 86400);
-  let d = (document.getElementById("days").value = days);
-
-  let hour = Math.floor(difference / 3600);
-  let h = (document.getElementById("hr0").value = hour);
-
-  let minute = Math.floor(difference / 60);
-  let m = (document.getElementById("min0").value = minute);
-
-  let sec = Math.floor(difference) % 60;
-  let s = (document.getElementById("sec0").value = sec);
-}
 
 
 
